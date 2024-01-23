@@ -1,0 +1,8 @@
+debug/
+target/
+
+Cargo.lock
+Session.vim
+avr-specs
+rust-toolchain.toml
+.cargo/
