@@ -38,13 +38,7 @@ impl BME280 {
         data
     }
 
-    // fn read_register(&self, i2c: &mut hal_I2c, register: u8) -> u8 {
-    //     let mut data: [u8; 1] = [0];
-    //     i2c.write_read(self.address, &[register], &mut data).unwrap();
-    //     data[0]
-    // }
-
-    pub(crate) fn read_calibration_data_h(address: u8, i2c: &mut hal_I2c)
+    fn read_calibration_data_h(address: u8, i2c: &mut hal_I2c)
         -> [u8; BME280_H_CALIB_DATA_LEN]
     {
         let mut data = [0; BME280_H_CALIB_DATA_LEN];
@@ -52,7 +46,7 @@ impl BME280 {
         data
     }
 
-    pub(crate) fn read_calibration_data_pt(address: u8, i2c: &mut hal_I2c)
+    fn read_calibration_data_pt(address: u8, i2c: &mut hal_I2c)
         -> [u8; BME280_P_T_CALIB_DATA_LEN]
     {
         let mut data = [0; BME280_P_T_CALIB_DATA_LEN];
@@ -64,6 +58,7 @@ impl BME280 {
         i2c.write(self.address, &[register, data]).unwrap();
     }
 
+    #[inline]
     fn write_settings(&self, i2c: &mut hal_I2c) {
         self.write_register(i2c, CONFIG, self.settings.config);
         self.write_register(i2c, CTRL_MEAS, self.settings.ctrl_meas);
