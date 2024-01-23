@@ -4,11 +4,13 @@ version = "0.1.0"
 authors = ["jacksonn97 <jackson.n.97@proton.me>"]
 edition = "2021"
 license = "Apache-2.0 OR MIT"
+repository = "https://github.com/jacksonn97/avr-bme280"
+homepage = "https://github.com/jacksonn97/avr-bme280"
 
-[[bin]]
-name = "avr-bme280"
-test = false
-bench = false
+# [[bin]]
+# name = "avr-bme280"
+# test = false
+# bench = false
 
 [dependencies]
 panic-halt = "0.2.0"
