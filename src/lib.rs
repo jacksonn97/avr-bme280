@@ -190,7 +190,7 @@ impl Measure {
         let humidity = data_msb | data_lsb;
 
         Measure {
-            temperature: CalibrationData::fix_temp(calibration, temperature as i32) as f32 / 10.0,
+            temperature: CalibrationData::fix_temp(calibration, temperature as i32) as f32 / 100.0,
             pressure: CalibrationData::fix_pres(calibration, pressure as i32) as f32 / 256.0,
             humidity: CalibrationData::fix_humid(calibration, humidity as i32) as f32 / 1024.0,
         }
@@ -206,5 +206,4 @@ impl Default for Settings {
         Self { config: 0b00000000, ctrl_meas: 0b00100110, ctrl_hum: 0b00000001 }
     }
 }
-
 
