@@ -10,11 +10,6 @@ name = "avr-bme280"
 test = false
 bench = false
 
-# [[lib]]
-# name = "avr-bme280"
-# test = false
-# bench = false
-
 [dependencies]
 panic-halt = "0.2.0"
 ufmt = "0.2.0"
