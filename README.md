@@ -9,7 +9,7 @@ You can use library just like:
 use bme280::i2c::BME280; // you can change i2c to spi as you want
 let mut bme280 = BME280::init(&mut i2c, 0x76); // specify your i2c bus and address of sensor
                                                // for spi is spi bus and SS pin
-let mesrure = bme280.get_measures();
+let mesrure = bme280.get_measures(&mut i2c);
            // Return type is structure with temperature, humidity as pressure
 ```
 
