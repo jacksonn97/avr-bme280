@@ -4,7 +4,12 @@ Library based on [avr-hal](https://github.com/Rahix/avr-hal)
 =
 
 ## Using
-You can use library just like:
+First you need to add this crate as dependence:
+```toml
+[dependencies]
+avr-bme280 = { git = "https://github.com/jacksonn97/avr-bme280" }
+```
+Then you can use library just like:
 ```rust
 use bme280::i2c::BME280; // you can change i2c to spi as you want
 let mut bme280 = BME280::init(&mut i2c, 0x76); // specify your i2c bus and address of sensor
