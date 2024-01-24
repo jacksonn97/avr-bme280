@@ -29,16 +29,16 @@ let measure = bme280.get_measures(&mut i2c);
 
 You can you SPI definition like this:
 ```rust
- let (mut spi, ss) = Spi::new(dp.SPI,
-     pins.d13.into_output(),
-     pins.d11.into_output(),
-     pins.d12.into_pull_up_input(),
-     pins.d10.into_output(),
-     spi::Settings {
-         data_order: arduino_hal::spi::DataOrder::MostSignificantFirst,
-         clock: arduino_hal::spi::SerialClockRate::OscfOver4,
-         mode: embedded_hal::spi::MODE_0, // you can also you MODE_3
-     }
+let (mut spi, ss) = Spi::new(dp.SPI,
+    pins.d13.into_output(),
+    pins.d11.into_output(),
+    pins.d12.into_pull_up_input(),
+    pins.d10.into_output(),
+    spi::Settings {
+        data_order: arduino_hal::spi::DataOrder::MostSignificantFirst,
+        clock: arduino_hal::spi::SerialClockRate::OscfOver4,
+        mode: embedded_hal::spi::MODE_0, // you can also you MODE_3
+    }
  );
 ```
 
