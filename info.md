@@ -50,3 +50,10 @@ Cycle time = time of measurements + standby time
 ### I2C bus
 - `0x76` - default address
 - `0x77` - secondary address
+
+### SPI bus
+SPI awailable in two modes:
+- mode ‘00’ (CPOL = CPHA = ‘0’)
+- mode ‘11’ (CPOL = CPHA = ‘1’)
+
+Max SPI clock input frequency = 10MHz

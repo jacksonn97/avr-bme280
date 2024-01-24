@@ -18,18 +18,42 @@ let measure = bme280.get_measures(&mut i2c);
            // Return type is structure with temperature, humidity as pressure
 ```
 
+### Connection SPI
+| Board pin[^nano] | Sensor pin |
+| ------- | --- |
+| SCK 13  | SCL |
+| MOSI 11 | SDA |
+| MISO 12 | SDO |
+| SS 10   | CSB |
 
-### Roadmap
+
+You can you SPI definition like this:
+```rust
+ let (mut spi, ss) = Spi::new(dp.SPI,
+     pins.d13.into_output(),
+     pins.d11.into_output(),
+     pins.d12.into_pull_up_input(),
+     pins.d10.into_output(),
+     spi::Settings {
+         data_order: arduino_hal::spi::DataOrder::MostSignificantFirst,
+         clock: arduino_hal::spi::SerialClockRate::OscfOver4,
+         mode: embedded_hal::spi::MODE_0, // you can also you MODE_3
+     }
+ );
+```
+
+### Connection I2C
+
+| Board pin[^nano] | Sensor pin |
+| --- | --- |
+| SCL A5 | SCL |
+| SDA A4 | SDA |
+
+[^nano]: Specified pin numbers **only** for Nano, watch pinout
+
+## Roadmap
 - [x] I2C support
 - [x] SPI support
 - [ ] Error processing?
 - [ ] Docs
 - [ ] Datasheet brief
-
-### :warning: Important info :warning:
-If you can test library on some board from list contact with me(tested is marked):
-- [ ] Arduino Leonardo
-- [ ] Arduino Mega 2560
-- [ ] Arduino Mega 1280
-- [x] Arduino Nano
-- [ ] Arduino Uno
