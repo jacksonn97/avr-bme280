@@ -49,7 +49,7 @@ You can you SPI definition like this:
 | SCL A5 | SCL |
 | SDA A4 | SDA |
 
-[^nano]: Specified pin numbers **only** for Nano, watch pinout
+[^nano]: Specified pin numbers for Nano, watch pinout
 
 ## Roadmap
 - [x] I2C support
