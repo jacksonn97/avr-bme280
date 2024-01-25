@@ -1,0 +1,3 @@
+(function() {var implementors = {
+"embedded_hal":[["impl&lt;Word, Error&gt; Write for dyn <a class=\"trait\" href=\"embedded_hal/serial/trait.Write.html\" title=\"trait embedded_hal::serial::Write\">Write</a>&lt;Word, Error = Error&gt;<span class=\"where fmt-newline\">where\n    Word: From&lt;u8&gt;,</span>"]]
+};if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()

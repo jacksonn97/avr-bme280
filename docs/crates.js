@@ -1,0 +1,1 @@
+window.ALL_CRATES = ["arduino_hal","atmega_hal","avr_bme280","avr_device","avr_hal_generic","bare_metal","cfg_if","embedded_hal","embedded_storage","panic_halt","ufmt","ufmt_write","vcell","void"];

@@ -1,0 +1,3 @@
+(function() {var implementors = {
+"embedded_storage":[["impl&lt;'a, R, I&gt; Iterator for <a class=\"struct\" href=\"embedded_storage/iter/struct.OverlapIterator.html\" title=\"struct embedded_storage::iter::OverlapIterator\">OverlapIterator</a>&lt;'a, R, I&gt;<span class=\"where fmt-newline\">where\n    R: <a class=\"trait\" href=\"embedded_storage/trait.Region.html\" title=\"trait embedded_storage::Region\">Region</a>,\n    I: Iterator&lt;Item = R&gt;,</span>"]]
+};if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()

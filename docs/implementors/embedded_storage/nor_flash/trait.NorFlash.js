@@ -1,0 +1,3 @@
+(function() {var implementors = {
+"avr_hal_generic":[["impl&lt;H, EEPROM&gt; <a class=\"trait\" href=\"embedded_storage/nor_flash/trait.NorFlash.html\" title=\"trait embedded_storage::nor_flash::NorFlash\">NorFlash</a> for <a class=\"struct\" href=\"avr_hal_generic/eeprom/struct.Eeprom.html\" title=\"struct avr_hal_generic::eeprom::Eeprom\">Eeprom</a>&lt;H, EEPROM&gt;<span class=\"where fmt-newline\">where\n    EEPROM: <a class=\"trait\" href=\"avr_hal_generic/eeprom/trait.EepromOps.html\" title=\"trait avr_hal_generic::eeprom::EepromOps\">EepromOps</a>&lt;H&gt;,</span>"]]
+};if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()
