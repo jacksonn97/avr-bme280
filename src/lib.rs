@@ -1,13 +1,28 @@
 #![no_std]
+#![warn(missing_docs)]
 
-// #![deny(missing_docs)]
+//! Library for BME280
+//! Library based on [avr-hal](https://github.com/Rahix/avr-hal)
+//!
+//! ## Using
+//! Then you can use library just like:
+//! ```rust
+//! use avr_bme280::i2c::BME280; // you can change i2c to spi as you want
+//! let mut bme280 = BME280::init(&mut i2c, 0x76); // specify your i2c bus and address of sensor
+//!                                                // for spi is spi bus and SS pin
+//! let measure = bme280.get_measures(&mut i2c);
+//!            // Return type is structure with temperature, humidity as pressure
+//! ```
 
 pub(crate) use arduino_hal::{I2c as hal_I2c, Spi as hal_Spi};
 
 // re-exports
 
 
+/// Implementation I2C bus
 pub mod i2c;
+
+/// Implementation SPI bus
 pub mod spi;
 
 macro_rules! set_const {
@@ -41,10 +56,14 @@ set_const!(BME280_P_T_CALIB_DATA_LEN, 26, usize);
 set_const!(BME280_DATA_ADDR, 0xF7);
 set_const!(BME280_P_T_H_DATA_LEN, 8, usize);
 
+
 /// Out type for user
 pub struct Measure {
+    /// ?? i must explain this ??
     pub temperature: f32,
+    /// https://imgur.com/a/NOEPqa3
     pub humidity: f32,
+    /// yeah, this pressure
     pub pressure: f32,
 }
 
@@ -55,15 +74,14 @@ pub struct Measure {
 ///  - forced mode
 ///  - filter off
 ///
-// Config: t_sb[2:0], filter[2:0], <not used>[0], spi3w_en[0]
-//
-// Ctrl_meas: osrs_t[2:0], osrs_p[2:0], mode[1:0]
-//
-// Ctrl_hum: <not used>[5:0], osrs_h[2:0]
+///  Read the datasheet
 pub struct Settings {
-    pub(crate) config: u8,
-    pub(crate) ctrl_meas: u8,
-    pub(crate) ctrl_hum: u8,
+    /// t_sb[2:0], filter[2:0], \<not used\>[0], spi3w_en[0]
+    pub config: u8,
+    /// osrs_t[2:0], osrs_p[2:0], mode[1:0]
+    pub ctrl_meas: u8,
+    /// \<not used\>[5:0], osrs_h[2:0]
+    pub ctrl_hum: u8,
 }
 
 pub(crate) struct CalibrationData {
@@ -197,10 +215,6 @@ impl Measure {
     }
 }
 
-/// Default settings for weather measures
-/// - forced mode
-/// - pressure x 1, temperature x 1, humidity x 1
-/// - filter off
 impl Default for Settings {
     fn default() -> Self {
         Self { config: 0b00000000, ctrl_meas: 0b00100110, ctrl_hum: 0b00000001 }
