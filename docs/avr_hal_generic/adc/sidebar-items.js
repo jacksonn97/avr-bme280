@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"enum":["ClockDivider"],"struct":["Adc","Channel"],"trait":["AdcChannel","AdcOps"]};

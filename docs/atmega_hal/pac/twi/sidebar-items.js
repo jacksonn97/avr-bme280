@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"mod":["twamr","twar","twbr","twcr","twdr","twsr"],"struct":["RegisterBlock"],"type":["TWAMR","TWAR","TWBR","TWCR","TWDR","TWSR"]};

@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"mod":["wdtcsr"],"struct":["RegisterBlock"],"type":["WDTCSR"]};

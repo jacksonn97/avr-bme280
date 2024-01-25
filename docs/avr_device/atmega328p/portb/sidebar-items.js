@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"mod":["ddrb","pinb","portb"],"struct":["RegisterBlock"],"type":["DDRB","PINB","PORTB"]};

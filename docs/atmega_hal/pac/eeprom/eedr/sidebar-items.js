@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"struct":["EEDR_SPEC","R","W"]};

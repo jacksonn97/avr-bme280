@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"struct":["OutOfBoundsError"],"trait":["EepromOps"],"type":["Eeprom"]};

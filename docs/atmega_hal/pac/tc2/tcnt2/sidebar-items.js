@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"struct":["R","TCNT2_SPEC","W"]};

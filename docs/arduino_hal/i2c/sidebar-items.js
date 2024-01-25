@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"enum":["Direction","Error"],"mod":["twi_status"],"trait":["I2cOps"],"type":["I2c"]};

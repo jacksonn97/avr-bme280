@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"struct":["PCIFR_SPEC","R","W"],"type":["PCIF_R","PCIF_W"]};

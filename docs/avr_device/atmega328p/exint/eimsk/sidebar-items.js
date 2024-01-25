@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"struct":["EIMSK_SPEC","R","W"],"type":["INT0_R","INT0_W","INT1_R","INT1_W"]};

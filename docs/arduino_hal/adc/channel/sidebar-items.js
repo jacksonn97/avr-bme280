@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"struct":["ADC6","ADC7","Gnd","Temperature","Vbg"]};

@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"mod":["i2c","spi"],"struct":["Measure","Settings"]};

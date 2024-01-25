@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"enum":["DataOrder","SerialClockRate"],"struct":["ChipSelectPin","Settings"],"trait":["SpiOps"],"type":["Spi"]};

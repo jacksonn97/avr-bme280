@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"struct":["R","TWDR_SPEC","W"]};

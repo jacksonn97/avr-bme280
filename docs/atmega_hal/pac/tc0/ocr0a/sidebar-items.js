@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"struct":["OCR0A_SPEC","R","W"]};

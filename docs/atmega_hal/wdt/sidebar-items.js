@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"enum":["Timeout"],"trait":["WdtOps"],"type":["Wdt"]};

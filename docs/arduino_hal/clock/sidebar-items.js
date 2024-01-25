@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"struct":["MHz1","MHz12","MHz16","MHz20","MHz24","MHz8"],"trait":["Clock"]};

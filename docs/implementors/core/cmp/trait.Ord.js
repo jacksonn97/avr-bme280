@@ -1,4 +1,0 @@
-(function() {var implementors = {
-"avr_hal_generic":[["impl Ord for <a class=\"enum\" href=\"avr_hal_generic/simple_pwm/enum.Prescaler.html\" title=\"enum avr_hal_generic::simple_pwm::Prescaler\">Prescaler</a>"],["impl&lt;CLOCK: <a class=\"trait\" href=\"avr_hal_generic/clock/trait.Clock.html\" title=\"trait avr_hal_generic::clock::Clock\">Clock</a>&gt; Ord for <a class=\"struct\" href=\"avr_hal_generic/usart/struct.Baudrate.html\" title=\"struct avr_hal_generic::usart::Baudrate\">Baudrate</a>&lt;CLOCK&gt;"],["impl Ord for <a class=\"enum\" href=\"avr_hal_generic/wdt/enum.Timeout.html\" title=\"enum avr_hal_generic::wdt::Timeout\">Timeout</a>"]],
-"embedded_hal":[["impl Ord for <a class=\"enum\" href=\"embedded_hal/can/enum.ErrorKind.html\" title=\"enum embedded_hal::can::ErrorKind\">ErrorKind</a>"]]
-};if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()

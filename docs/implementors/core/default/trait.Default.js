@@ -1,5 +1,0 @@
-(function() {var implementors = {
-"atmega_hal":[["impl Default for <a class=\"enum\" href=\"atmega_hal/adc/enum.ReferenceVoltage.html\" title=\"enum atmega_hal::adc::ReferenceVoltage\">ReferenceVoltage</a>"],["impl Default for <a class=\"struct\" href=\"atmega_hal/adc/struct.AdcSettings.html\" title=\"struct atmega_hal::adc::AdcSettings\">AdcSettings</a>"]],
-"avr_bme280":[["impl Default for <a class=\"struct\" href=\"avr_bme280/struct.Settings.html\" title=\"struct avr_bme280::Settings\">Settings</a>"]],
-"avr_hal_generic":[["impl Default for <a class=\"struct\" href=\"avr_hal_generic/spi/struct.Settings.html\" title=\"struct avr_hal_generic::spi::Settings\">Settings</a>"],["impl Default for <a class=\"enum\" href=\"avr_hal_generic/adc/enum.ClockDivider.html\" title=\"enum avr_hal_generic::adc::ClockDivider\">ClockDivider</a>"]]
-};if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()
