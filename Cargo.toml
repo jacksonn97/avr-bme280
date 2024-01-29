@@ -7,15 +7,7 @@ license = "Apache-2.0 OR MIT"
 repository = "https://github.com/jacksonn97/avr-bme280"
 homepage = "https://github.com/jacksonn97/avr-bme280"
 
-# [[bin]]
-# name = "avr-bme280"
-# test = false
-# bench = false
-
 [dependencies]
-panic-halt = "0.2.0"
-ufmt = "0.2.0"
-nb = "0.1.2"
 embedded-hal = "0.2.3"
 
 [dependencies.arduino-hal]
