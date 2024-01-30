@@ -54,6 +54,5 @@ let (mut spi, ss) = Spi::new(dp.SPI,
 ## Roadmap
 - [x] I2C support
 - [x] SPI support
-- [ ] Error processing?
-- [ ] Docs
+- [x] Docs
 - [ ] Datasheet brief
