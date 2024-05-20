@@ -37,7 +37,7 @@ let (mut spi, ss) = Spi::new(dp.SPI,
     spi::Settings {
         data_order: arduino_hal::spi::DataOrder::MostSignificantFirst,
         clock: arduino_hal::spi::SerialClockRate::OscfOver4,
-        mode: embedded_hal::spi::MODE_0, // you can also you MODE_3
+        mode: embedded_hal::spi::MODE_0, // you can also use MODE_3
     }
  );
 ```
