@@ -1,8 +1,5 @@
 # avr-bme280
 
-Library based on [avr-hal](https://github.com/Rahix/avr-hal)
-=
-
 ## Using
 First you need to add this crate as dependence:
 ```toml
@@ -55,4 +52,4 @@ let (mut spi, ss) = Spi::new(dp.SPI,
 - [x] I2C support
 - [x] SPI support
 - [x] Docs
-- [ ] Datasheet brief
+- [x] Datasheet [brief](https://github.com/jacksonn97/avr-bme280/blob/master/info.md)
